@@ -1,0 +1,413 @@
+/* =========================================================
+   1. THEME
+   ========================================================= */
+
+.stApp {
+    background-color: #080d1a;
+    color: #FFFFFF;
+}
+
+[data-testid="stSidebar"] {
+    background-color: #111520;
+}
+
+
+/* =========================================================
+   2. MAIN LAYOUT
+   ========================================================= */
+
+.block-container {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    max-width: 900px;
+}
+
+
+/* =========================================================
+   3. SIDEBAR LAYOUT
+   ========================================================= */
+
+[data-testid="stSidebar"] {
+    min-width: 320px;
+    max-width: 320px;
+}
+
+[data-testid="stSidebar"] .block-container {
+    padding: 1.5rem 1rem 1rem 1rem;
+}
+
+[data-testid="stSidebar"] hr {
+    border-color: #2A3140;
+    margin: 1.2rem 0;
+}
+
+[data-testid="stSidebar"] h1,
+[data-testid="stSidebar"] h2,
+[data-testid="stSidebar"] h3 {
+    margin-bottom: 0.5rem;
+}
+
+
+/* =========================================================
+   4. TYPOGRAPHY
+   ========================================================= */
+
+h1,
+h2,
+h3 {
+    color: #FFFFFF;
+    letter-spacing: -0.4px;
+}
+
+p {
+    color: #B8C0CC;
+}
+
+[data-testid="stCaptionContainer"] {
+    color: #8F98A8;
+}
+
+.block-container h1 {
+    margin-bottom: 0.4rem;
+}
+
+.block-container h4 {
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+}
+
+
+/* =========================================================
+   5. BUTTONS
+   ========================================================= */
+
+.stButton > button {
+    background-color: #181D2A;
+    color: #FFFFFF;
+    border: 1px solid #2A3140;
+    border-radius: 8px;
+    padding: 0.6rem 1rem;
+    font-weight: 600;
+    transition: all 0.2s ease;
+}
+
+.stButton > button:hover {
+    background-color: #222938;
+    border-color: #3A4355;
+}
+
+.stButton > button:active {
+    transform: scale(0.98);
+}
+
+
+/* =========================================================
+   6. SIDEBAR BUTTONS
+   ========================================================= */
+
+[data-testid="stSidebar"] .stButton > button {
+    width: 100%;
+    min-height: 42px;
+    font-size: 0.9rem;
+    border-radius: 8px;
+}
+
+[data-testid="stSidebar"] .stButton > button:hover {
+    border-color: #4A5568;
+}
+
+
+/* =========================================================
+   7. INPUTS
+   ========================================================= */
+
+[data-testid="stTextInput"] input,
+[data-testid="stNumberInput"] input {
+    background-color: #181D2A;
+    color: #FFFFFF;
+    border: 1px solid #2A3140;
+    border-radius: 8px;
+}
+
+[data-baseweb="select"] > div {
+    background-color: #181D2A;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+[data-baseweb="select"] {
+    border-radius: 8px;
+}
+
+input:focus,
+textarea:focus {
+    border-color: #4F8CFF !important;
+    box-shadow: 0 0 0 1px #4F8CFF;
+}
+
+
+/* =========================================================
+   8. METRIC CARDS
+   ========================================================= */
+
+[data-testid="stMetric"] {
+    background-color: #181D2A;
+    border: 1px solid #2A3140;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+[data-testid="stMetricLabel"] {
+    color: #8F98A8;
+}
+
+[data-testid="stMetricValue"] {
+    color: #FFFFFF;
+}
+
+[data-testid="stSidebar"] [data-testid="stMetric"] {
+    margin-bottom: 0.7rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stMetricValue"] {
+    font-size: 1.35rem;
+}
+
+[data-testid="stSidebar"] [data-testid="stMetricLabel"] {
+    font-size: 0.78rem;
+}
+
+
+/* =========================================================
+   9. FORMS
+   ========================================================= */
+
+[data-testid="stForm"] {
+    background-color: #111520;
+    border: 1px solid #2A3140;
+    border-radius: 10px;
+    padding: 1.5rem;
+}
+
+
+/* =========================================================
+   10. SIDEBAR BRAND
+   ========================================================= */
+
+.sidebar-brand {
+    display: flex;
+    align-items: center;
+    gap: 11px;
+    margin-bottom: 12px;
+}
+
+.sidebar-brand-icon {
+    font-size: 1.8rem;
+}
+
+.sidebar-brand-title {
+    color: #FFFFFF;
+    font-size: 1.15rem;
+    font-weight: 700;
+}
+
+.sidebar-brand-subtitle {
+    color: #8F98A8;
+    font-size: 0.72rem;
+    margin-top: 2px;
+}
+
+.sidebar-section-title {
+    color: #8F98A8;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+
+/* =========================================================
+   11. LIVE WORKOUT STATUS
+   ========================================================= */
+
+.workout-live-status {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    color: #6EE7B7;
+    font-size: 0.72rem;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    margin-bottom: 8px;
+}
+
+.live-dot {
+    font-size: 0.8rem;
+}
+
+
+/* =========================================================
+   12. LIVE CAMERA HEADER
+   ========================================================= */
+
+.camera-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #111520;
+    border: 1px solid #2A3140;
+    border-bottom: none;
+    border-radius: 12px 12px 0 0;
+    padding: 14px 18px;
+    margin-top: 20px;
+}
+
+.camera-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+    color: #FFFFFF;
+}
+
+.camera-header p {
+    margin: 3px 0 0 0;
+    font-size: 0.82rem;
+    color: #8F98A8;
+}
+
+.camera-status {
+    font-size: 0.75rem;
+    font-weight: 700;
+    color: #6EE7B7;
+    letter-spacing: 0.8px;
+}
+
+
+/* =========================================================
+   13. AI COACH CARD
+   ========================================================= */
+
+.coach-card {
+    background: #111520;
+    border: 1px solid #2A3140;
+    border-radius: 12px;
+    padding: 16px 18px;
+    margin: 22px 0;
+}
+
+.coach-card-header {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFFFFF;
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.coach-icon {
+    font-size: 1.1rem;
+}
+
+.coach-message {
+    color: #B8C0CC;
+    font-size: 0.95rem;
+    line-height: 1.5;
+}
+
+
+/* =========================================================
+   14. WELCOME CARD
+   ========================================================= */
+
+.welcome-card {
+    background: #111520;
+    border: 1px solid #2A3140;
+    border-radius: 14px;
+    padding: 40px 30px;
+    text-align: center;
+    margin: 30px 0;
+}
+
+.welcome-icon {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+}
+
+.welcome-card h2 {
+    margin: 0 0 8px 0;
+    font-size: 1.5rem;
+}
+
+.welcome-card p {
+    max-width: 520px;
+    margin: 0 auto 20px auto;
+    color: #8F98A8;
+    line-height: 1.5;
+}
+
+.welcome-hint {
+    display: inline-block;
+    background: #181D2A;
+    border: 1px solid #2A3140;
+    border-radius: 8px;
+    padding: 9px 14px;
+    color: #B8C0CC;
+    font-size: 0.85rem;
+}
+
+
+/* =========================================================
+   15. WORKOUT HISTORY
+   ========================================================= */
+
+.history-header {
+    background: #111520;
+    border: 1px solid #2A3140;
+    border-radius: 12px 12px 0 0;
+    padding: 16px 18px;
+    margin-top: 20px;
+}
+
+.history-header h3 {
+    margin: 0;
+    font-size: 1.05rem;
+}
+
+.history-header p {
+    margin: 4px 0 0 0;
+    color: #8F98A8;
+    font-size: 0.82rem;
+}
+
+[data-testid="stTable"] {
+    border: 1px solid #2A3140;
+    border-radius: 0 0 12px 12px;
+    overflow: hidden;
+}
+
+[data-testid="stTable"] table {
+    background-color: #111520;
+}
+
+[data-testid="stTable"] thead th {
+    background-color: #181D2A;
+    color: #B8C0CC;
+    font-size: 0.78rem;
+    font-weight: 600;
+    border-bottom: 1px solid #2A3140;
+}
+
+[data-testid="stTable"] tbody td {
+    color: #FFFFFF;
+    font-size: 0.85rem;
+    border-bottom: 1px solid #202737;
+}
+
+
+/* =========================================================
+   16. DIVIDERS
+   ========================================================= */
+
+hr {
+    border-color: #2A3140;
+}
