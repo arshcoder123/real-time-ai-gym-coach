@@ -303,7 +303,7 @@ load_dotenv()
 Start the Streamlit application with:
 
 ```bash
-streamlit run main.py
+uv run streamlit run main.py
 ```
 
 The application will open in your browser.
